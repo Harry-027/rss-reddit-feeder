@@ -43,6 +43,6 @@ func WebCrawler() {
 func main() {
 	WebCrawler()
 	cr := cron.New()
-	cr.AddFunc("1 * * * *", WebCrawler)
+	cr.AddFunc("60 * * * *", WebCrawler)
 	cr.Start()
 }
